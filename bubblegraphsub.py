@@ -2,19 +2,6 @@
 
 import matplotlib.pyplot as plt
 
-def get_config():
-#   A function that retrieves the config file
-    ficonfig = open("D:\Dropbox\Code\Python Scripts\modules\FirstInMods\First In.cfg", "r").readlines()
-#	ficonfig = open("C:\Users\sean\Dropbox\Code\Python Scripts\modules\FirstInMods\First In.cfg.surface", "r").readlines()	ficonfig = open()
-    secondline = int(ficonfig[1])
-    
-    return ficonfig
-
-
-    
-configlist = get_config()
-FILE_PATH = str(configlist[23])
-
 system_name = list()
 law_level = list()
 accept_level = list()
@@ -35,7 +22,8 @@ starport_to_color = {'A':10,'B':9,'C':8,'D':7,'E':6,'X':5}
 
 
 i = 0
-for line in open(FILE_PATH + "/bubblesec.txt"):
+
+for line in open("bubblesec.txt"):
     i += 1
     systems_ = str(line)
     if i == 1:
