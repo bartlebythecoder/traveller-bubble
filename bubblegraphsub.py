@@ -47,7 +47,7 @@ plt.xlabel('Law Level')
 plt.ylabel('Acceptance Level')
 plt.title('Acceptance and Law')
 
-plt.axis([-1, 15, -1, 15])
+plt.axis([-1, 17, -1, 17])
 plt.scatter(law_level,accept_level,s=tech_level, c = starport, cmap=plt.cm.RdYlGn)
 
 for i, txt in enumerate(system_name):
